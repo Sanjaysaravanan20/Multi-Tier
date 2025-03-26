@@ -3,6 +3,7 @@ pipeline {
     environment {
         AWS_ACCESS_KEY_ID = credentials('aws-credentialss')
         AWS_SECRET_ACCESS_KEY = credentials('aws-credentialss')
+        AWS_REGION = 'us-east-2'
     }
     stages {
         stage('Checkout Code') {
